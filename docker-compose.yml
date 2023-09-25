@@ -74,4 +74,13 @@ services:
     ports:
       - 8081:8081
     depends_on:
-      - redpanda-0      
+      - redpanda-0
+  accounts-service:
+    build:
+      context: accounts-service/
+    networks:
+      - redpanda_network
+    ports:
+      - 8082:8082
+    depends_on:
+      - redpanda-0              

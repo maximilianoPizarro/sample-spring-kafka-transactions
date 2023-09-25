@@ -3,6 +3,8 @@
 [![CircleCI](https://circleci.com/gh/piomin/sample-spring-kafka-transactions.svg?style=svg)](https://circleci.com/gh/piomin/sample-spring-kafka-transactions)
 
 [![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-black.svg)](https://sonarcloud.io/dashboard?id=piomin_sample-spring-kafka-transactions)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://github.com/maximilianoPizarro/sample-spring-kafka-transactions)
+
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=piomin_sample-spring-kafka-transactions&metric=bugs)](https://sonarcloud.io/dashboard?id=piomin_sample-spring-kafka-transactions)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=piomin_sample-spring-kafka-transactions&metric=coverage)](https://sonarcloud.io/dashboard?id=piomin_sample-spring-kafka-transactions)
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=piomin_sample-spring-kafka-transactions&metric=ncloc)](https://sonarcloud.io/dashboard?id=piomin_sample-spring-kafka-transactions)
