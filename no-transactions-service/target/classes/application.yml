@@ -1,0 +1,18 @@
+spring:
+  application.name: no-transactions-service
+  kafka:
+    bootstrap-servers: ${KAFKA_URL}
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.LongDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        "[spring.json.value.default.type]": "pl.piomin.services.common.model.Order"
+        "[spring.json.trusted.packages]": "pl.piomin.services.common.model"
+        "[spring.json.use.type.headers]": false
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.LongSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+  output.ansi.enabled: ALWAYS
+
+logging:
+  pattern.console: "%clr(%d{HH:mm:ss.SSS}){blue} %clr(---){faint} %clr([%18.18t]){yellow} %clr(:){red} %clr(%m){faint}%n"
