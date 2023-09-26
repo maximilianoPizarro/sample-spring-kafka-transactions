@@ -2,8 +2,6 @@
 <!DOCTYPE configuration>
 
 <configuration scan="true">
-	<include
-		resource="org/springframework/boot/logging/logback/base.xml" />
 
 	<!-- The FILE and ASYNC appenders are here as examples for a production 
 		configuration -->
@@ -17,7 +15,7 @@
 		</rollingPolicy>
 		<encoder>
 			<charset>utf-8</charset>
-			<Pattern>%d %-5level [%thread] %logger{0}: %msg%n</Pattern>
+			<Pattern>%clr(%d{HH:mm:ss.SSS}){blue} %clr(---){faint} %clr([%15.15t]){yellow} %clr(:){red} %clr(%m){faint}%n</Pattern>
 		</encoder>
 	</appender>
    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
