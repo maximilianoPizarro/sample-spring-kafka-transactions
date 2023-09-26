@@ -1,4 +1,4 @@
-version: '3'
+version: '3.8'
 networks:
   redpanda_network:
     driver: bridge
@@ -100,7 +100,7 @@ services:
     build:
       context: transactions-service/
     environment:
-      KAFKA_URL: redpanda:9092      
+      KAFKA_URL: redpanda:19092      
     networks:
       - redpanda_network
     ports:
